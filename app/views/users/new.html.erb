@@ -1,0 +1,19 @@
+<div class="container">
+
+<h1>Signup</h1>
+
+<%= bootstrap_form_for :user, url: "/users" do |f| %>
+
+    <%= f.text_field :first_name  %>
+    <%= f.text_field :last_name  %>
+    <%= f.text_field :username  %>
+    <%= f.select(:gender, options_for_select([['Male', 1], ['Female', 2], ['Other', 3]])) %>
+    <%= f.text_field :age %>
+    <%= f.text_field :email  %>
+    <%= f.password_field :password %>
+    <%= f.primary "Submit" %>
+
+<% end %>
+
+
+</div>
