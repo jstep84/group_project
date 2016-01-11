@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   #Login Routes
-  get 'login' => 'sessions#new'
-  post 'login' => 'sessions#create'
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
 
   #Logout Route
   get '/logout' => 'sessions#destroy'
