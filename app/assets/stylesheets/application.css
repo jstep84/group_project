@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -29,13 +29,13 @@ body {
 	/*font-family: 'Lato', sans-serif;*/
 		font-family: 'Montserrat', sans-serif;
 
-	/*background-color: #FFA631;*/
-	background-color: #E67E22;
+	background-color: #FFA631;
+	/*background-color: #E67E22;*/
 	/*background-color: #D35400;*/
 }
 
-=======
+
 .signMsg {
 	margin-top: 5.5%;
 }
->>>>>>> 0976a81a07e494b54f994cef64e4c8174cd73384
+
