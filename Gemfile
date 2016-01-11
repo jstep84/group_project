@@ -24,9 +24,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
+<<<<<<< HEAD
  gem 'bcrypt', '~> 3.1.7'
 
- gem 'yelp'
+=======
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'yelp', require: 'yelp'
+>>>>>>> e95d11f76cdb9dc8eaa0b52a8a309216cd764fa3
 
 # Use Unicorn as the app server
 # gem 'unicorn'
