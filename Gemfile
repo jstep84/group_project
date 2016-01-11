@@ -30,18 +30,8 @@ gem 'bootstrap_form'
 #Yelp API
 gem 'yelp', require: 'yelp'
 
-<<<<<<< HEAD
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-# <<<<<<< HEAD
-# =======
-
-# gem 'yelp', require: 'yelp'
-# >>>>>>> e95d11f76cdb9dc8eaa0b52a8a309216cd764fa3
-=======
 #Bootstrap form
 gem 'bootstrap_form'
->>>>>>> bf81da306cfe7c29f65cfedab9c18f6a65ac0052
 
 # Use Unicorn as the app server
 # gem 'unicorn'
