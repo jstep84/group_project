@@ -14,7 +14,6 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'bootstrap_form'
-gem 'yelp', require: 'yelp'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -27,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+gem 'yelp', require: 'yelp'
+
 
 # Use Unicorn as the app server
 # gem 'unicorn'
