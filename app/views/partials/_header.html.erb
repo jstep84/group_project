@@ -15,18 +15,20 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shelter</a></li>
+        <li><a href="#">Meals</a></li>
+        <li><a href="#">Other Resources</a></li>
+        <li><a href="#">About</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <% if @current_user %>
-            <li><%= "Signed in as: " + @current_user.email %></li>
+            <li class="signMsg"><%= "Signed in as: " + @current_user.email %></li>
             <li> <%= link_to "Logout", "/logout" %></li>
         <% else %>
-            <%= link_to "Login", "/login" %> | <%= link_to "Signup", "/signup" %>
+            <li><%= link_to "Login", "/login" %></li> 
+            <li> <%= link_to "Signup", "/signup" %></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
