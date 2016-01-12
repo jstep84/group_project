@@ -14,8 +14,9 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
   #Search routes
-  get '/search/:id' => 'search#find'
-  post '/search/:id' => 'search#find'
+  get '/search/:id' => 'search#show'
+  get '/search' => 'search#find'
+
   get '/results' => 'search#results'
 
   #Root Route
