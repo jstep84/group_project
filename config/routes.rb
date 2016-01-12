@@ -14,8 +14,11 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
-  #Main Results route
-  get '/show' => 'main#show'
+  #Search routes
+  get '/search/:id' => 'search#show'
+  get '/search' => 'search#find'
+
+  get '/results' => 'search#results'
 
   #Root Route
   root 'main#index'
