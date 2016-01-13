@@ -1,2 +1,8 @@
-<h1>Passwords#create_new</h1>
-<p>Find me in app/views/passwords/create_new.html.erb</p>
+<h1>Reset your password</h1>
+
+<%= bootstrap_form_for :user do |f| %>
+  <%= f.hidden_field :id, :value => @user.id %>
+  <%= f.password_field :password, :placeholder => "New Password" %>
+  <%= f.password_field :password_confirmation, :placeholder => "Confirm new password" %>
+  <%= f.submit "Reset Password", :class=> "btn btn-primary" %>
+<% end %>
