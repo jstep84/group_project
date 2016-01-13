@@ -4,7 +4,8 @@ class User < ActiveRecord::Base
             presence: true,
             uniqueness: {case_sensitive: false}
 
-  validates_presence_of :password, on: :create
+  validates_confirmation_of :password, on: :create
+  validates_presence_of :password_confirmation, on: :create
 
   has_secure_password
 
