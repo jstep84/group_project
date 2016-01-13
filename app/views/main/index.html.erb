@@ -10,13 +10,13 @@
 			<%= bootstrap_form_for :user do |f| %>
     		<%= f.text_field :email, placeholder: "Enter your email" %>
     		<%= f.password_field :password, placeholder: "Enter your password"%>
-		</div> <!-- 		closes hidden form div -->
+		</div> <!-- closes hidden form div -->
 		<figure>
 			<%= image_submit_tag "Home.png" %>
 			<figcaption>&nbsp;&nbsp;&nbsp; Find shelter </figcaption>
 		</figure>
 			<% end %>
-	</div>
+	</div> <!-- 	closes shelter icon div -->
 	<div class= "col-xs-4 col-md-4 col-md-offset-2"> 
 		<div class="hidden">
 
@@ -29,8 +29,8 @@
 			<figcaption>&nbsp;&nbsp;&nbsp; Find meals </figcaption>
 		</figure>
 		 	<% end %>
-	</div>
-</div> <!-- closes container div for image icons -->
+	</div> <!-- 	closes meals icon div -->
+</div> <!-- closes container div for image icons and logo -->
 
 <div class="container" id="indexSearchDiv">
 	<%= bootstrap_form_tag url: 'search', method: :get do |f| %>
