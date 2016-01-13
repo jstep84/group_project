@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'profile/new'
+
+  get 'profile/create'
+
   get 'static_pages/about'
 
   get 'static_pages/resources'
