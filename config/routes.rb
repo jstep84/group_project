@@ -16,8 +16,9 @@ Rails.application.routes.draw do
   #Search routes
   get '/search/:id' => 'search#show'
   get '/search' => 'search#find'
-
   get '/results' => 'search#results'
+
+  get '/meal' => 'meal#show'
 
   #Root Route
   root 'main#index'
