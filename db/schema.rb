@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160113212755) do
+=======
+ActiveRecord::Schema.define(version: 20160113215547) do
+>>>>>>> 56c7846c7bdb64530eae3aec19061c2953d38b00
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +57,8 @@ ActiveRecord::Schema.define(version: 20160113212755) do
     t.string   "favorite"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "reset_code"
+    t.datetime "expires_at"
   end
 
 end
