@@ -34,8 +34,12 @@ gem 'yelp', require: 'yelp'
 #Bootstrap form
 gem 'bootstrap_form'
 
-gem 'bcrypt', '~> 3.1', '>= 3.1.10'
+#Requests
+gem 'rest-client'
 
+#HTML parsing
+gem 'nokogiri'
+gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
