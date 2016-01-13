@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'profile/new'
 
   get 'profile/create'
@@ -29,5 +30,11 @@ Rails.application.routes.draw do
 
   #Root Route
   root 'main#index'
+
+  #Mailers Routes
+  get  'reset'       => 'passwords#new'
+  post 'reset'       => 'passwords#create'
+  get  'newpassword' => 'passwords#create_new'
+  post 'newpassword' => 'passwords#update'
 
 end
