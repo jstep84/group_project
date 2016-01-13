@@ -13,6 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+# gem 'bootstrap_form'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -34,6 +35,7 @@ gem 'yelp', require: 'yelp'
 gem 'bootstrap_form'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.10'
+
 
 # Use Unicorn as the app server
 # gem 'unicorn'

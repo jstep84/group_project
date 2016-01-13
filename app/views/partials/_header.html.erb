@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active">
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="#">Shelter</a></li>
         <li><a href="#">Meals</a></li>
         <li><a href="#">Other Resources</a></li>
@@ -24,7 +24,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <% if @current_user %>
-            <li class="signMsg"><%= "Signed in as: " + @current_user.email %></li>
+            <li class="signMsg"><%= "Signed in as: " + @current_user.username %></li>
             <li> <%= link_to "Logout", "/logout" %></li>
         <% else %>
             <li><%= link_to "Login", "/login" %></li> 
