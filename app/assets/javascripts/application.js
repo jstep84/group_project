@@ -15,3 +15,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+function init(){
+    locate()
+}
+$(document).ready(function(){
+    init();
+});
+

@@ -4,21 +4,21 @@ require 'nokogiri'
 
 module ScrapingHelper
 
-  def self.scrape
-    url = "http://www.resourcehouse.com/WIN211/results.aspx?SearchID=F199AC46-1D7B-42CC-921A-D2889790C7AA"
+  def self.scrape url
     response = RestClient.get url
     html = response.body
     data = Nokogiri::HTML(html)
+    data
   end
 
   def self.long_lat_convert address
-    url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyCDNLvHEKUvpKKZDN8KkXxCO-TWOOLjP54"
+    puts address
+    url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyAcXJDnxyoY6GsNLeBk9Gmfvhu5HCC-FeA"
     google_res = RestClient.get url
     if (JSON.parse(google_res))['results'].length > 0
       return JSON.parse(google_res)['results'][0]['geometry']['location']
     else
       return {lat: 0, lng: 0}
-
     end
   end
 
@@ -32,9 +32,10 @@ module ScrapingHelper
     size = data.css('#results h2').count
     results = []
     i = 0
-    while i < size
+    while i < size - 1
 
       coords = long_lat_convert(address_capture[i].text)
+      puts coords
 
       results[i] = {title: title_capture[i].text,
                     address: address_capture[i].text,
