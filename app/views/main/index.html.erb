@@ -3,3 +3,16 @@
     <%= f.primary 'Search' %>
 <% end %>
 
+<% @results.each do |i| %>
+
+  <h3><%=  i[:title]  %></h3>
+  <p><%=  i[:address] %></p>
+  <p><%=  i[:phone] %></p>
+  <p><%=  i[:hours] %></p>
+  <p><%=  i[:description] %></p>
+  <p><%=  i[:longitude] %></p>
+  <p><%=  i[:latitude] %></p>
+  <p><%=  i[:service] %></p>
+
+
+<% end %>
