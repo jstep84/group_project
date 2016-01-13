@@ -1,2 +1,10 @@
-<h1>Passwords#new</h1>
-<p>Find me in app/views/passwords/new.html.erb</p>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h1>Reset Password</h1>
+
+    <%= bootstrap_form_for :user do |f| %>
+    <%= f.text_field :email, placeholder: "Enter your email", icon: "user" %>
+    <%= f.submit "Send reset email", :class=> "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
