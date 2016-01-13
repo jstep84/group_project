@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -21,5 +22,11 @@ Rails.application.routes.draw do
 
   #Root Route
   root 'main#index'
+
+  #Mailers Routes
+  get  'reset'       => 'passwords#new'
+  post 'reset'       => 'passwords#create'
+  get  'newpassword' => 'passwords#create_new'
+  post 'newpassword' => 'passwords#update'
 
 end

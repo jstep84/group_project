@@ -5,8 +5,8 @@
 <%= bootstrap_form_for :user do |f| %>
     <%= f.text_field :email, placeholder: "Enter your email" %>
     <%= f.password_field :password, placeholder: "Enter your password"%>
-    <!-- < %= f.primary "Login"% > -->
-    <%= f.image_submit_tag("Coffee.png") %>
+    <%= f.primary "Login"%>
+    <%= link_to "Forgot password?", reset_path, class: "btn btn-link" %>
 <% end %>
 
 </div>
