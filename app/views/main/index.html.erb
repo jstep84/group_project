@@ -1,15 +1,42 @@
-
-<h1>Essential</h1>
-
-<div class= "col-md-6">
-	<%= image(:src => '/img/myphoto.jpg') -%>
-</div>
-<div class= "col-md-6">
-</div>
-
 <div class= "container">
+
+<!--   <div class="container-fluid">
+  	<ul class="nav navbar-nav navbar-right">
+        < % if @current_user %>
+            <li class="signMsg">< %= "Signed in as: " + @current_user.username %></li>
+            <li> < %= link_to "Logout", "/logout" %></li>
+        < % else %>
+            <li>< %= link_to "Login", "/login" %></li> 
+            <li> < %= link_to "Signup", "/signup" %></li>
+        < % end %>
+   	</ul>
+  </div>
+ -->
+	<div class="container circle">
+	<h1 class="essentialH1">Essential</h1>
+	</div>
+
+	<div class= "col-xs-4 col-xs-offset-2 col-md-4 col-md-offset-2">
+		<figure>
+			<%= image_tag "Home.png" %>
+			<figcaption>Search for shelter</figcaption>
+		</figure>
+	</div>
+	<div class= "col-xs-4 col-md-4 col-md-offset-2"> 
+		<figure>
+			<%= image_tag "Coffee.png" %>
+			<figcaption>Search for meals</figcaption>
+		</figure>
+	</div>
+</div> <!-- closes container div for image icons -->
+
+<div class="container">
 	<%= bootstrap_form_tag url: 'search', method: :get do |f| %>
 		<%= f.text_field :search_term, label: 'Search' %>
 		<%= f.primary 'Search' %>
 	<% end %>
+</div>
+
+<div class="col-md-10 col-md-offset-1">
+	<p id="indexP"> Essential's aim is to find food and shelter near you. Create an account to take advantage of all of our features, such as saving locations in a list and leaving comments on locations to help out your community.</p>
 </div>

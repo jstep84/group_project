@@ -11,9 +11,11 @@
 </head>
 <body>
 
-<%= render "partials/header" %>
+<%= render "partials/header" unless @disable_nav %>
 <%= render "partials/flash" %>
-<%= yield %>
+<div class="container">
+	<%= yield %>
+</div>
 <%= render "partials/footer" %>
 
 </body>
