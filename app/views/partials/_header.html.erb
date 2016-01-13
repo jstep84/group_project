@@ -8,25 +8,27 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#">Essentials</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li class="active">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Shelter</a></li>
+        <li><a href="#">Meals</a></li>
+        <li><a href="#">Other Resources</a></li>
+        <li><a href="#">About</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <% if @current_user %>
-            <li><%= "Signed in as: " + @current_user.email %></li>
+            <li class="signMsg"><%= "Signed in as: " + @current_user.username %></li>
             <li> <%= link_to "Logout", "/logout" %></li>
         <% else %>
-            <%= link_to "Login", "/login" %> | <%= link_to "Signup", "/signup" %>
+            <li><%= link_to "Login", "/login" %></li> 
+            <li> <%= link_to "Signup", "/signup" %></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->

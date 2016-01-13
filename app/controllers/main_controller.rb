@@ -20,6 +20,7 @@ class MainController < ApplicationController
     #   @shelters = Shelter.create(i)
     # end
 
+  	# @disable_nav = true
   end
 
   def show
