@@ -1,4 +1,4 @@
-<img src="/app/assets/images/essential_logo.psd">
+<img src="essential_logo.psd">
 
 <h1>Synopsis</h1>
 <p>This is a synopsis about this project</p><b>
