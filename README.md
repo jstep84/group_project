@@ -1,4 +1,4 @@
-![Logo](http://postimg.org/image/4cukygilv/)
+![Logo](http://s13.postimg.org/ezoe3vqrb/essential_logo.png)
 
 <h1>Synopsis</h1>
 <p>Essential is a full-stack web application created to assist the homeless and low-income Seattle users with finding shelter and hot meals near their current locations. The project utilizes:</p> 
