@@ -1,4 +1,4 @@
-<img src="/app/assets/images/essential_logo.psd">
+<img src="https://www.dropbox.com/s/et839rjmw5oilli/essential_logo.psd?dl=0">
 <h1>Synopsis</h1>
 <p>This is a synopsis about this project</p><b>
 
