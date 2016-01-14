@@ -27,7 +27,13 @@ Rails.application.routes.draw do
   get '/search' => 'search#find'
   get '/results' => 'search#results'
 
+  #Proximity Results
   get '/meal' => 'meal#show'
+  get '/shelter' => 'shelter#show'
+
+  #Expanded Results
+  get '/expanded/meal/:id' => 'expanded#show_meal'
+  get '/expanded/shelter/:id' => 'expanded#show_shelter'
 
   #Root Route
   root 'main#index'
