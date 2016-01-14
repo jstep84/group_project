@@ -5,10 +5,10 @@ class MealController < ApplicationController
   end
 
   def show
-    render json: params
-    # redirect_to root_path
+    @meals = Meal.all
 
 
+    render 'results/meal_results'
   end
 
 

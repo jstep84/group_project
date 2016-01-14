@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
     else
       flash[:danger] = "Invalid User Entry"
-      redirect_to "/signup"
+      redirect_to signup_path
 
     end
   end

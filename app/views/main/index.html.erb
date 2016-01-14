@@ -6,10 +6,10 @@
 
   <div class= "col-xs-4 col-xs-offset-2 col-md-4 col-md-offset-2">
     <div class="hidden">
-      <%= bootstrap_form_tag url: '/shelter', method: :get do |f| %>
-          <%= f.text_field 'long', name: 'long' %>
-          <%= f.text_field 'lat', name: 'lat' %>
-          </div>  <!-- closes hidden form div -->
+      <%= form_tag '/shelter', method: :get do |f| %>
+          <%= text_field_tag 'long'%>
+          <%= text_field_tag 'lat'%>
+          </div> <!-- 		closes hidden form div -->
           <figure>
             <%= image_submit_tag "Home.png" %>
             <figcaption>&nbsp;&nbsp;&nbsp; Find shelter </figcaption>
@@ -19,9 +19,9 @@
 
   <div class= "col-xs-4 col-md-4 col-md-offset-2">
     <div class="hidden">
-      <%= bootstrap_form_tag url: '/meal', method: :get do |f| %>
-          <%= f.text_field 'long', name: 'long' %>
-          <%= f.text_field 'lat', name: 'lat' %>
+      <%= form_tag '/meal', method: :get do |f| %>
+          <%= text_field_tag 'long2'%>
+          <%= text_field_tag 'lat2'%>
           </div> <!-- 		closes hidden form div -->
           <figure>
             <%= image_submit_tag "Coffee.png" %>
