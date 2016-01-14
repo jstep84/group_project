@@ -1,4 +1,6 @@
-![ALT tag](app/assets/images/essential_logo.psd)
+<div class="container circle">
+	<h1 class="essentialH1">Essential</h1>
+</div>
 
 <h1>Synopsis</h1>
 <p>This is a synopsis about this project</p><b>
