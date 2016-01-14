@@ -1,1 +1,10 @@
-<%= @place.title %>
+<div class="container">
+	<h1><strong><%= @place["title"] %></strong></h1>
+	<h3><%= @place["service"] %></h3>
+	
+	<h3><%= @place["address"] %></h3>
+	<h3><%= @place["phone"] %></h3>
+	<h3><%= @place["hours"] %></h3>
+	
+	<h3><%= @place["description"] %></h3>
+</div>

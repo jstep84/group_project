@@ -25,6 +25,10 @@
 	font-size: 48px;
 }
 
+.icons {
+	
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	/*background-color: #fffaf0;*/
@@ -89,3 +93,8 @@ html {
 	margin-top: 6.9%;
 } 
 
+.navbar-nav > li .btn.btn-link {
+	padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+}
