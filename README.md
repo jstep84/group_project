@@ -1,4 +1,4 @@
-<img src="essential_logo.jpg">
+<%= image_submit_tag "essential_logo.jpg" %>
 
 <h1>Synopsis</h1>
 <p>This is a synopsis about this project</p><b>
