@@ -1,4 +1,4 @@
-![ALT tag](https://raw.github.com/jstep84/group_project/blob/master/app/assets/images/essential_logo.psd)
+![nothinghere](https://raw.github.com/jstep84/group_project/blob/master/app/assets/images/essential_logo.psd)
 
 <h1>Synopsis</h1>
 <p>This is a synopsis about this project</p><b>
