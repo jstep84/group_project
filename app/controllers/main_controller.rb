@@ -9,8 +9,8 @@ class MainController < ApplicationController
 
   def index
 
-    # @data = ScrapingHelper.scrape "http://www.resourcehouse.com/WIN211/results.aspx?SearchID=0FEBE320-EE8A-4770-AAC0-B9C27A8B8FD5"
-    # @results = ScrapingHelper.set_everything @data
+      # @data = ScrapingHelper.scrape "http://www.resourcehouse.com/WIN211/results.aspx?SearchID=0FEBE320-EE8A-4770-AAC0-B9C27A8B8FD5"
+      # @results = ScrapingHelper.set_everything @data
     #
     # @data = ScrapingHelper.scrape
     # @results = ScrapingHelper.set_everything @data
@@ -19,9 +19,10 @@ class MainController < ApplicationController
 
     #THIS SHIT POPULATES THE DB
 
-    # @results.each do |i|
-    #   @meals = Meal.create(i)
-    # end
+      # @results.each do |i|
+      #   @meals = Meal.create(i)
+      #   @shelters = Shelter.create(i)
+      # end
 
   	# @disable_nav = true
   end
