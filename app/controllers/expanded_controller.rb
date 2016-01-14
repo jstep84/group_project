@@ -6,6 +6,7 @@ class ExpandedController < ApplicationController
 
   def show_meal
     @place = Meal.find_by_title(params[:id])
+    p @place
 
     render 'results/expanded_meal'
   end
