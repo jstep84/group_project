@@ -1,24 +1,20 @@
-<div class="container circle">
-	<h1 class="essentialH1">Essential</h1>
-</div>
-
 <h1>Synopsis</h1>
-<p>This is a synopsis about this project</p><b>
+<p>This is a synopsis about this project</p><br>
 
 <h1>Code Example</h1>
-<p>This is a code sample from this project</p><b>
+<p>This is a code sample from this project</p><br>
 
 <h1>Motivation</h1>
-<p>This is why we created this project</p><b>
+<p>This is why we created this project</p><br>
 
 <h1>Installation</h1>
-<p>This explains (with code examples) how the project can be accessed</p><b>
+<p>This explains (with code examples) how the project can be accessed</p><br>
 
 <h1>Tests</h1>
-<p>n/a</p><b>
+<p>n/a</p><br>
 
 <h1>Contributors</h1>
-<p>Here's how you can support the project</p><b>
+<p>Here's how you can support the project</p><br>
 
 <h1>License</h1>
 <p>describing any licenses used in the project</p>
