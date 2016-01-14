@@ -1,19 +1,21 @@
 <div class="container">
 
-<h1>Add A Resource</h1>
+<h3>Want to tell us about a shelter or meals program?</h3>
 
-<h3>Know of a Shelter or Meals Program Not Listed Here?</h3>
-
-<h5>Fill Out Our Form and We'll Add it to Our List</h5>
+<h5>Fill out our form and we'll add it to our list.</h5>
 
 <%= bootstrap_form_for :user, url: "/profile" do |f| %>
 
     <%= f.text_field :title  %>
     <%= f.text_field :address  %>
-    <%= f.text_field :contact_name  %>
-    <%= f.text_field :email  %>
-    <%= f.select(:type, options_for_select([['Meals', 1], ['Shelter', 2], ['Both', 3]])) %>
+    <%= f.text_field :phone  %>
+    <%= f.text_field :hours  %>
+    <%= f.text_field :description  %>
+    <%= f.select(:service, options_for_select([['Meals', 1], ['Shelter', 2]])) %>
     <%= f.primary "Submit" %>
+
+<!-- add contact name for adds? add email?-->
+<!-- add separate address fields? -->
 
 <% end %>
 
