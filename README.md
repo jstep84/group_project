@@ -1,4 +1,4 @@
-![nothinghere](https://app/assets/images/essential_logo.psd?raw=true)
+![nothinghere](app/assets/images/essential_logo.psd?raw=true)
 
 <h1>Synopsis</h1>
 <p>This is a synopsis about this project</p><b>
