@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap'
 
+# Use Mail gem to send emails.
+gem 'mail'
+
 # gem 'yelp', '~> 2.1', '>= 2.1.1'
 
 #Yelp API
