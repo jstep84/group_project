@@ -3,7 +3,7 @@
     <% if (i[:distance] * 10) < 100 %>
 
         <a href="/expanded/meal/<%= i[:result][:title] %>"> <h1><%= i[:result][:title] %></h1> </a>
-        <h3><%= number_with_precision((i[:distance] * 10), precision: 2) %></h3>
+        <h3><%= number_with_precision(i[:distance], precision: 2) %></h3>
 
     <% end %>
 
