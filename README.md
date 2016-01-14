@@ -1,20 +1,20 @@
 <h1>Synopsis</h1>
-<p>This is a synopsis about this project</p>
-
-<h1>Code Example</h1>
-<p>This is a code sample from this project</p>
+<p>Essential is a full-stack web application created to assist the homeless and low-income Seattle users with finding shelter and hot meals near their current locations. The project utilizes:</p> 
+<ul>
+	<li>Ruby on Rails framework</li>
+	<li>Yelp API and search</li>
+	<li>data-scraping technology gathering targets from www.resourcehouse.com</li>
+	<li>powerful, in-house designed geolocation formula</li>
+</ul>
 
 <h1>Motivation</h1>
-<p>This is why we created this project</p>
+<p>The Essential team was inspired by a shared motivation to focus our project energies on a relevant, community-service based app that is functional immediately upon deployment. Our goal is to secure a relevant solution to a local issue.</p>
 
-<h1>Installation</h1>
-<p>This explains (with code examples) how the project can be accessed</p>
-
-<h1>Tests</h1>
-<p>n/a</p><br>
+<h1>Use</h1>
+<p></p>
 
 <h1>Contributors</h1>
-<p>Here's how you can support the project</p>
+<p>We need your support! The Essential Project is an open-source movement ready to expand its functionality to metropolis facing the same struggles. You can also add to the Seattle resources</p>
 
 <h1>License</h1>
 <p>describing any licenses used in the project</p>
