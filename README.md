@@ -1,3 +1,5 @@
+![Logo](http://francky.me/images/quora001.png)
+
 <h1>Synopsis</h1>
 <p>Essential is a full-stack web application created to assist the homeless and low-income Seattle users with finding shelter and hot meals near their current locations. The project utilizes:</p> 
 <ul>
