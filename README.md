@@ -1,5 +1,4 @@
-
-<img src="/assets/images/essential_logo.psd">
+![Logo](http://github.com/jstep84/group_project/app/assets/images/essential_logo.psd)
 
 <h1>Synopsis</h1>
 <p>This is a synopsis about this project</p><b>
