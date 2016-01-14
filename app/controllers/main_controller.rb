@@ -18,13 +18,10 @@ class MainController < ApplicationController
 
     #THIS SHIT POPULATES THE DB
 
-
       # @results.each do |i|
       #   @meals = Meal.create(i)
       #   @shelters = Shelter.create(i)
       # end
-
- 
   end
 
   def show

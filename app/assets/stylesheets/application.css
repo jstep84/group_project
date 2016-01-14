@@ -28,7 +28,6 @@
 #indexSearchDiv {
 	margin: 20px;
 	margin-top: 30px;
-
 }
 
 body {
@@ -38,13 +37,11 @@ body {
 	/*background-repeat: no-repeat;*/
 	/*background-size: 100%;*/
 	margin: 0 0 60px; 
-
 }
 
 .navbar {
 	background-color: #FFA631;
 	margin-bottom: 30px;
-
 }
 
 html {
@@ -64,9 +61,7 @@ html {
 	vertical-align: middle;
 }
 
-
 #indexP {
-	/*color: #7db700;*/
 	/*color: #378b2e;*/
 	color: black;
 	padding: 10px;
@@ -76,7 +71,6 @@ html {
 	margin-top: 12px;
 	margin-bottom: 30px;
 	border-radius: 8px;
-
 }
 
 .circle {
