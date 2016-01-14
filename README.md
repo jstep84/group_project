@@ -13,5 +13,5 @@
 <h1>Using Essential</h1>
 <p>Out of the box, Essential is ready to use by either clicking on the shelter or food icon, or typing a specific search into the form on the home page. By creating a free account, the user is able to save their favorite resources and leave useful feedback on their experience.</p>
 
-<h1>Contributors</h1>
+<h1>Contributing</h1>
 <p>We need your support! The Essential Project is an open-source movement ready to expand its functionality to any metropolis with a struggling low-income community. You can also add to the Seattle resources database by using the 'Adding a Resource' feature on the application.</p>
