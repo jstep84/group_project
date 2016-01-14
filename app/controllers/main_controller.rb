@@ -21,9 +21,9 @@ class MainController < ApplicationController
 
     # @results.each do |i|
     #   @meals = Meal.create(i)
+    #   @shelter = Shelter.create(i)
     # end
 
-  	# @disable_nav = true
   end
 
   def show
