@@ -1,5 +1,10 @@
-<% @shelters.each do |i| %>
+<% @shelter_results.each do |i| %>
 
-    <a href="/expanded/shelter/<%= i.title %>"> <h1><%= i.title %></h1> </a>
+    <% if (i[:distance] * 10) < 100 %>
+
+    <a href="/expanded/shelter/<%= i[:result][:title] %>"> <h1><%= i[:result][:title] %></h1> </a>
+    <h3>Distance: <%= number_with_precision((i[:distance] * 10), precision: 2) %></h3>
+
+    <% end %>
 
 <% end %>

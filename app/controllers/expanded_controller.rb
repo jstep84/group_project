@@ -1,5 +1,7 @@
 class ExpandedController < ApplicationController
 
+  before_action :current_user
+
   def user_location
 
   end
