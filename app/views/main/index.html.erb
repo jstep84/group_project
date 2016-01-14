@@ -33,7 +33,7 @@
 
 <div class="container" id="indexSearchDiv">
 	<%= bootstrap_form_tag url: 'search', method: :get do |f| %>
-		<%= f.text_field :search_term, label: 'Search', placeholder: 'Search for a shelter or meals' %>
+		<%= f.text_field :search_term, label: 'Search', hide_label: true, placeholder: 'Search for a shelter or meals' %>
 		<%= f.primary 'Search' %>
 	<% end %>
 </div>
