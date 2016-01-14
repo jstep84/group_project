@@ -1,4 +1,4 @@
-![alt tag](https://photos-1.dropbox.com/t/2/AACn5ZALqK_hwXq70VdAcYiGF4sey3oOCTUWNRtKhMcG5w/12/384184539/png/32x32/1/_/1/2/essential_logo.psd/EIK7pIcDGPoPIAEoAQ/R846ReTZ98Aj9xT5vh34Ssdz2g9I8TEhPqbwFF2v8Ew?size_mode=5)
+<img src="https://photos-1.dropbox.com/t/2/AACn5ZALqK_hwXq70VdAcYiGF4sey3oOCTUWNRtKhMcG5w/12/384184539/png/32x32/1/_/1/2/essential_logo.psd/EIK7pIcDGPoPIAEoAQ/R846ReTZ98Aj9xT5vh34Ssdz2g9I8TEhPqbwFF2v8Ew?size_mode=5">
 
 <h1>Synopsis</h1>
 <p>This is a synopsis about this project</p><b>
