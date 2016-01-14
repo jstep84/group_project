@@ -35,7 +35,6 @@ module ScrapingHelper
     while i < size - 1
 
       coords = long_lat_convert(address_capture[i].text)
-      puts coords
 
       results[i] = {title: title_capture[i].text,
                     address: address_capture[i].text,
@@ -45,7 +44,7 @@ module ScrapingHelper
                     hours: details_capture[i].text.match(/(?:Hours:)(.*)/),
                     description: description_capture[i].text,
                     #My god this is horrible
-                    service: (service_capture[i].to_s.match(/>(.*)</)).to_s.sub(">", "").sub("<", "")
+                    service: ((service_capture[i].to_s.match(/>(.*)</)).to_s.sub(">", "").sub("<", ""))
       }
       i +=1
     end
