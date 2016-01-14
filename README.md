@@ -1,0 +1,23 @@
+<h1>Synopsis</h1>
+<p>This is a synopsis about this project</p>
+
+<h1>Code Example</h1>
+<p>This is a code sample from this project</p>
+
+<h1>Motivation</h1>
+<p>This is why we created this project</p>
+
+<h1>Installation</h1>
+<p>This explains (with code examples) how the project can be accessed</p>
+
+<h1>Tests</h1>
+<p>n/a</p><br>
+
+<h1>Contributors</h1>
+<p>Here's how you can support the project</p>
+
+<h1>License</h1>
+<p>describing any licenses used in the project</p>
+
+
+<!-- https://photos-1.dropbox.com/t/2/AACn5ZALqK_hwXq70VdAcYiGF4sey3oOCTUWNRtKhMcG5w/12/384184539/png/32x32/1/_/1/2/essential_logo.psd/EIK7pIcDGPoPIAEoAQ/R846ReTZ98Aj9xT5vh34Ssdz2g9I8TEhPqbwFF2v8Ew?size_mode=5 -->
