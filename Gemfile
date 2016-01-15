@@ -35,6 +35,8 @@ gem 'yelp', require: 'yelp'
 #Bootstrap form
 gem 'bootstrap_form'
 
+gem 'puma'
+
 #Requests
 gem 'rest-client'
 
