@@ -185,7 +185,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
-  mail
   nokogiri
   pg
   rails (= 4.2.4)
