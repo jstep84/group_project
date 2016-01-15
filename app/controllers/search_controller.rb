@@ -1,6 +1,8 @@
 require 'yelp'
 
 class SearchController < ApplicationController
+  before_action :current_user
+
 
   def find
     client = Yelp::Client.new({ consumer_key: ENV['CONSUMER_KEY'],

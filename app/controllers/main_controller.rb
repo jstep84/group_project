@@ -5,11 +5,22 @@ class MainController < ApplicationController
 
   before_action :current_user
 
-
-
   def index
-    # @data = ScrapingHelper.scrape "http://www.resourcehouse.com/WIN211/results.aspx?SearchID=0FEBE320-EE8A-4770-AAC0-B9C27A8B8FD5"
+
+    # @data = ScrapingHelper.scrape "http://www.resourcehouse.com/WIN211/results.aspx?SearchID=C0395517-4B18-4E07-B6F0-7DA0AF008A98"
     # @results = ScrapingHelper.set_everything @data
+    #THIS POPULATES THE DB
+
+    # @results.each do |i|
+    #   @meals = Meal.where(:title => i[:title],
+    #                       :address => i[:address],
+    #                       :longitude => i[:longitude],
+    #                       :latitude => i[:latitude],
+    #                       :phone => i[:phone],
+    #                       :hours => i[:hours],
+    #                       :description => i[:description],
+    #                       :service => i[:service]).first_or_initialize
+    # end
 
     # @data = ScrapingHelper.scrape
     # @results = ScrapingHelper.set_everything @data

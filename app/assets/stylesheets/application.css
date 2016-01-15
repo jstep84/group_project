@@ -90,3 +90,8 @@ html {
 	margin-top: 6.9%;
 } 
 
+.navbar-nav > li .btn.btn-link {
+	padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+}

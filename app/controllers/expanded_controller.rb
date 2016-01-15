@@ -1,12 +1,15 @@
 class ExpandedController < ApplicationController
     before_action :current_user
 
+  before_action :current_user
+
   def user_location
 
   end
 
   def show_meal
     @place = Meal.find_by_title(params[:id])
+    p @place
 
     #@comments = @place.comments.all
 

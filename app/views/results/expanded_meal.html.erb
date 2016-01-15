@@ -1,11 +1,23 @@
-<h1><%= @place.title %></h1>
 
+
+<div class="container">
+  <h1><strong><%= @place["title"] %></strong></h1>
+  <h3><%= @place["service"] %></h3>
+  
+  <h3><%= @place["address"] %></h3>
+  <h3><%= @place["phone"] %></h3>
+  <h3><%= @place["hours"] %></h3>
+  
+  <h3><%= @place["description"] %></h3>
+</div>
 
 <h3>Comments</h3>
-<ul id="comments">
+<ul class="comments">
 <% if @comments %>
   <% @comments.each do |comment| %>
-    <li><%= comment.content %></li>
+    <div class="well well-sm">
+      <h4><%= comment.content %></h4>
+    </div>
   <% end %>
 <% end %>
 </ul>
@@ -22,6 +34,3 @@
   	<% else %>
   	<h3> Sign in to post comments </h3>
 <% end %>
-
-
-<!-- I can see comments, but i can't post comments -->

@@ -15,8 +15,25 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active">
-        <li><a href="#">Shelter</a></li>
-        <li><a href="#">Meals</a></li>
+          <%= form_tag '/shelter', method: :get do |f| %>
+            <%= hidden_field_tag 'long3'%>
+            <%= hidden_field_tag 'lat3'%>
+            <button type="submit" class="btn btn-link">
+              Shelter
+            </button>
+          <% end %>
+        </li>
+
+        <li class="active">
+          <%= form_tag '/meal', method: :get do |f| %>
+            <%= hidden_field_tag 'long4'%>
+            <%= hidden_field_tag 'lat4'%>
+            <button type="submit" class="btn btn-link">
+              Meals
+            </button>
+          <% end %>
+        </li>
+
         <li><a href="/static_pages/resources">Other Resources</a></li>
         <li><a href="/static_pages/about">About</a></li>
         <li><a href="/profile/create">Add a Profile</a></li>
