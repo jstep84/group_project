@@ -1,8 +1,9 @@
 <div class="container">
   <h3>Want to tell us about a shelter or meals program?</h3>
+  <%if @current_user %>
   <h5>Fill out our form and we'll add it to our list.</h5>
   <%= bootstrap_form_for :user, url: "/profile" do |f| %>
-      <%= f.text_field :title  %>
+      <%= f.text_field :title %>
       <%= f.text_field :address  %>
       <%= f.text_field :phone  %>
       <%= f.text_field :hours  %>
@@ -12,5 +13,7 @@
       <!-- add contact name for adds? add email?-->
       <!-- add separate address fields? -->
   <% end %>
-
+  <% else %>
+    <h3> Sign in to add it to our list!</h3>
+  <% end %>
 </div>

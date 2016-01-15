@@ -17,16 +17,13 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
 
+
 .essentialH1 {
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;	
 	color: white;
 	padding-top: 80px;
 	font-size: 48px;
-}
-
-.icons {
-	
 }
 
 body {
@@ -36,13 +33,11 @@ body {
 	/*background-repeat: no-repeat;*/
 	/*background-size: 100%;*/
 	margin: 0 0 60px; 
-
 }
 
 .navbar {
 	background-color: #FFA631;
 	margin-bottom: 30px;
-
 }
 
 html {
@@ -62,18 +57,15 @@ html {
 	vertical-align: middle;
 }
 
-
 #indexP {
-	/*color: #7db700;*/
-	color: #378b2e;
-	/*color: black;*/
+	color: #181b56; /*Fernando's suggestion for blue*/
 	padding: 10px;
 	font-size: 16px;
 	/*background: rgba(78,220,107,.3);*/
 	background: rgba(255,255,255,.7);
-	margin: 10px;
 	border-radius: 8px;
-
+	margin: 20px;
+	text-align: center;
 }
 
 .circle {
@@ -82,11 +74,7 @@ html {
 	height: 250px; 
 	/* width and height can be anything, as long as they're equal */
 	background-color: #FFA631;
-	margin-bottom: 30px;
-	/*box-shadow: 5px 5px rgba(0,0,0,0.3); 
-		-moz-box-shadow: 5px 5px rgba(0,0,0,0.3); 
-		-webkit-box-shadow: 5px 5px rgba(0,0,0,0.3); 
-		-o-box-shadow: 5px 5px rgba(0,0,0,0.3); */
+	margin-bottom: 20px;
 }
 
 .signMsg {
@@ -97,4 +85,35 @@ html {
 	padding-top: 15px;
     padding-bottom: 15px;
     border: none;
+}
+
+figure {
+	max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+	.essential {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+    .essential {
+    	display: none;
+    }
+    figcaption {
+    	font-size: 10px;
+    }
+    footer {
+	    font-family: 'Montserrat', sans-serif;
+		background-color: #FFA631;
+		/*background-color: #7db700;*/
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		height: 60px;
+		text-align: center;
+		vertical-align: middle;
+    }
 }
