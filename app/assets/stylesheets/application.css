@@ -65,8 +65,9 @@ html {
 
 #indexP {
 	/*color: #7db700;*/
-	color: #378b2e;
+/*	color: #378b2e;*/
 	/*color: black;*/
+	color: #181b56; /*Fernando's suggestion for blue*/
 	padding: 10px;
 	font-size: 16px;
 	/*background: rgba(78,220,107,.3);*/
@@ -97,4 +98,15 @@ html {
 	padding-top: 15px;
     padding-bottom: 15px;
     border: none;
+}
+
+figure {
+	max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    figcaption{
+    	display: none;
+    }
 }
