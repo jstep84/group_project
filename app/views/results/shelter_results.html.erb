@@ -3,7 +3,7 @@
     <% if (i[:distance] * 10) < 100 %>
 
     <a href="/expanded/shelter/<%= i[:result][:title] %>"> <h1><%= i[:result][:title] %></h1> </a>
-    <h3>Distance from you: <%= number_with_precision(i[:distance], precision: 2) %> Miles</h3>
+    <h3>Distance: <%= number_with_precision(i[:distance], precision: 2) %> Miles</h3>
 
     <% end %>
 
