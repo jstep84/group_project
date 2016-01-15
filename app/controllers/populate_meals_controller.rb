@@ -5,7 +5,7 @@ class PopulateMealsController < ApplicationController
 
   def populate
 
-    @data = ScrapingHelper.scrape "http://www.resourcehouse.com/WIN211/results.aspx?SearchID=226531E5-33DC-4F60-A73C-036BCCA90D26"
+    @data = ScrapingHelper.scrape params[:shelter][:url]
     @results = ScrapingHelper.set_everything @data
 
     #THIS POPULATES THE DB
@@ -16,6 +16,10 @@ class PopulateMealsController < ApplicationController
 
     render text: "DONE!"
 
+  end
+
+  def get_url
+    render 'populate/populate_meals'
   end
 
 end

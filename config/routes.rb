@@ -52,8 +52,10 @@ Rails.application.routes.draw do
   post 'profile' => 'profile#new'
 
   #Populate DB
-  get 'populate_meals/' => 'populate_meals#populate'
-  get 'populate_shelters/' => 'populate_shelters#populate'
+  get 'populate_meals/' => 'populate_meals#get_url'
+  post 'populate_meals/' => 'populate_meals#populate'
+  get 'populate_shelters/' => 'populate_shelters#get_url'
+  post 'populate_shelters/' => 'populate_shelters#populate'
 
 
 end

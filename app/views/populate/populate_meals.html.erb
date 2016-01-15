@@ -1,0 +1,9 @@
+<h1>Populate the meals DB</h1>
+
+<%= bootstrap_form_for :meals, url: "/populate_meals" do |f| %>
+
+    <%= f.text_field :url %>
+
+    <%= f.primary "Submit" %>
+
+<% end %>
