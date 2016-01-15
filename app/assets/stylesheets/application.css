@@ -17,17 +17,13 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
 
+
 .essentialH1 {
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;	
 	color: white;
 	padding-top: 80px;
 	font-size: 48px;
-}
-
-#indexSearchDiv {
-	margin: 20px;
-	margin-top: 30px;
 }
 
 body {
@@ -67,9 +63,9 @@ html {
 	font-size: 16px;
 	/*background: rgba(78,220,107,.3);*/
 	background: rgba(255,255,255,.7);
-	margin-top: 12px;
-	margin-bottom: 30px;
 	border-radius: 8px;
+	margin: 20px;
+	text-align: center;
 }
 
 .circle {
@@ -96,8 +92,28 @@ figure {
     height: auto;
 }
 
+@media only screen and (max-width: 1000px) {
+	.essential {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 500px) {
-    figcaption{
+    .essential {
     	display: none;
+    }
+    figcaption {
+    	font-size: 10px;
+    }
+    footer {
+	    font-family: 'Montserrat', sans-serif;
+		background-color: #FFA631;
+		/*background-color: #7db700;*/
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		height: 60px;
+		text-align: center;
+		vertical-align: middle;
     }
 }
