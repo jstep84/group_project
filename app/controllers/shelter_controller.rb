@@ -8,8 +8,14 @@ class ShelterController < ApplicationController
 
   def show
     @shelter = Shelter.all
-    user_lat = params[:lat2]
-    user_long = params[:long2]
+    if params[:lat2]
+      user_lat = params[:lat2]
+      user_long = params[:long2]
+    else
+      user_lat = params[:lat3]
+      user_long = params[:long3]
+    end
+
     puts user_long
     @shelter_results = []
 
