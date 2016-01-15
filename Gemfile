@@ -25,8 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap'
 
-gem 'transitions'
-
 # gem 'yelp', '~> 2.1', '>= 2.1.1'
 
 #Yelp API
