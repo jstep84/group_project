@@ -105,8 +105,28 @@ figure {
     height: auto;
 }
 
+@media only screen and (max-width: 1000px) {
+	.essential {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 500px) {
     figcaption{
     	display: none;
+    }
+    .essential {
+    	display: none;
+    }
+    footer {
+    	font-family: 'Montserrat', sans-serif;
+	background-color: #FFA631;
+	/*background-color: #7db700;*/
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
     }
 }
