@@ -6,13 +6,9 @@ class MealController < ApplicationController
 
   def show
     @meals = Meal.all
-    if params[:lat]
-      user_lat = params[:lat]
-      user_long = params[:long]
-    else
-      user_lat = params[:lat4]
-      user_long = params[:long4]
-    end
+
+    user_lat = cookies[:latitude]
+    user_long = cookies[:longitude]
 
     @meal_results = []
 
