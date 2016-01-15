@@ -29,7 +29,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	/*background-color: #fffaf0;*/
-	background-image: asset-url('paper.png');
+	background-image: url('paper.png');
 	/*background-repeat: no-repeat;*/
 	/*background-size: 100%;*/
 	margin: 0 0 60px; 
