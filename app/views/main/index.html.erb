@@ -13,7 +13,7 @@
           </div> <!-- 		closes hidden form div -->
           <figure>
             <%= image_submit_tag "Home.png" %>
-            <figcaption>&nbsp;&nbsp;&nbsp; Find shelter </figcaption>
+            <figcaption>&nbsp;&nbsp;&nbsp; Find Shelter </figcaption>
           </figure>
       <% end %>
       </div> <!-- 	closes shelter icon div -->
@@ -26,21 +26,16 @@
           </div> <!-- 		closes hidden form div -->
           <figure>
             <%= image_submit_tag "Coffee.png" %>
-            <figcaption>&nbsp;&nbsp;&nbsp; Find meals </figcaption>
+            <figcaption>&nbsp;&nbsp;&nbsp; Find Meals </figcaption>
           </figure>
       <% end %>
       </div> <!-- 	closes meals icon div -->
 </div>
 
-<div class="container">
-	<%= bootstrap_form_tag url: 'search', method: :get do |f| %>
-		<%= f.text_field :search_term, label: 'Search' %>
-		<%= f.primary 'Search' %>
-	<% end %>
-</div>
 
-<div class="col-md-10 col-md-offset-1">
-	<p id="indexP"> Essential's aim is to find food and shelter near you. Create an account to take advantage of all of our features, such as saving locations in a list and leaving comments on locations to help out your community.</p>
+
+<div class="col-md-10 col-md-offset-1 essential">
+	<p id="indexP"> Essential helps find food and shelter in your area. Create an account and contribute comments that will be useful for others in the community.</p>
 </div>
 
 </div>
