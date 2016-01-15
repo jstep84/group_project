@@ -5,7 +5,7 @@ class PopulateSheltersController < ApplicationController
 
   def populate
 
-    @data = ScrapingHelper.scrape "http://www.resourcehouse.com/WIN211/results.aspx?SearchID=92733FFE-DB00-4A5C-8335-7A5A9A6527A1"
+    @data = ScrapingHelper.scrape params[:shelter][:url]
     @results = ScrapingHelper.set_everything @data
 
     #THIS POPULATES THE DB
@@ -14,8 +14,13 @@ class PopulateSheltersController < ApplicationController
       @shelters = Shelter.create(i)
     end
 
-    render text: "DONE!"
+    render text: 'DONE!'
 
   end
+
+  def get_url
+    render 'populate/populate_shelters'
+  end
+
 
 end

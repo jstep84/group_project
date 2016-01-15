@@ -1,0 +1,10 @@
+
+<h1>Populate the shelter DB</h1>
+
+<%= bootstrap_form_for :shelter, url: "/populate_shelters" do |f| %>
+
+    <%= f.text_field :url %>
+
+    <%= f.primary "Submit" %>
+
+<% end %>
