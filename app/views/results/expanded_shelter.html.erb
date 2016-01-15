@@ -8,3 +8,27 @@
 	
 	<h3><%= @shelter["description"] %></h3>
 </div>
+
+<h3>Comments</h3>
+<ul class="comments">
+<% if @comments %>
+  <% @comments.each do |comment| %>
+    <div class="well well-sm">
+      <h4><%= comment.content %></h4>
+    </div>
+  <% end %>
+<% end %>
+</ul>
+
+<% if @current_user %>
+	<%= bootstrap_form_for :comment do |f| %>
+    		
+      			<%= f.label 'Add a comment' %>
+      			<%= f.text_field :content, label: "comment", hide_label: true, placeholder: "Type a comment here" %>
+    			<%= f.hidden_field :place_title, :value => @shelter.title %>
+    			<%= f.primary "Add comment" %>
+  	
+  	<% end %>
+  	<% else %>
+  	<h3> Sign in to post comments </h3>
+<% end %>
