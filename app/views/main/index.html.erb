@@ -5,34 +5,34 @@
 	</div>
 
 <div class="icons">
-  <div class= "col-xs-4 col-xs-offset-2 col-md-4 col-md-offset-2">
+  <div class= "shelter-wrapper">
     <div class="hidden">
       <%= form_tag '/shelter', method: :get do |f| %>
-
           <%= text_field_tag 'long2'%>
           <%= text_field_tag 'lat2'%>
-          </div> <!-- 		closes hidden form div -->
-          <figure>
+    </div> <!-- 		closes hidden form div -->
+          <figure class="pull-left">
             <%= image_submit_tag "Home.png" %>
-            <figcaption>&nbsp;&nbsp;&nbsp; Find Shelter </figcaption>
+            <figcaption>Find Shelter</figcaption>
           </figure>
       <% end %>
-  </div> <!-- 	closes shelter icon div -->
-
-  <div class= "col-xs-4 col-md-4 col-md-offset-2">
     <div class="hidden">
       <%= form_tag '/meal', method: :get do |f| %>
           <%= text_field_tag 'long'%>
           <%= text_field_tag 'lat'%>
-          </div> <!-- 		closes hidden form div -->
-          <figure>
+    </div> <!-- 		closes hidden form div -->
+          <figure class="pull-right">
             <%= image_submit_tag "Coffee.png" %>
-            <figcaption>&nbsp;&nbsp;&nbsp; Find Meals </figcaption>
+            <figcaption>Find Meals</figcaption>
           </figure>
       <% end %>
+  </div> <!--   closes shelter icon div -->
+
+  <div class= "meal-wrapper">
   </div> <!-- 	closes meals icon div -->
-	</div> <!-- closes container div for image icons and logo -->
+</div> <!-- closes container div for image icons and logo -->
 </div> <!-- closes container for top half of page -->
+
 <div class= "container">
   <div class="col-md-10 col-md-offset-1 essential">
 	 <p id="indexP"> Essential helps find food and shelter in your area. Create an account and contribute comments that will be useful for others in the community.</p>
