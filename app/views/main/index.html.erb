@@ -33,15 +33,6 @@
   </div> <!-- 	closes meals icon div -->
 	</div> <!-- closes container div for image icons and logo -->
 </div> <!-- closes container for top half of page -->
-
-
-<div class="container" id="indexSearchDiv">
-	<%= bootstrap_form_tag url: 'search', method: :get do |f| %>
-		<%= f.text_field :search_term, label: 'Search', hide_label: true, placeholder: 'Search for a shelter or meals' %>
-		<%= f.primary 'Search' %>
-	<% end %>
-</div>
-
 <div class= "container">
   <div class="col-md-10 col-md-offset-1">
 	 <p id="indexP"> Essential helps find food and shelter in your area. Create an account and contribute comments that will be useful for others in the community.</p>

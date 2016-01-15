@@ -48,4 +48,7 @@ Rails.application.routes.draw do
   get  'newpassword' => 'passwords#create_new'
   post 'newpassword' => 'passwords#update'
 
+  #Add service form route
+  post 'profile' => 'profile#new'
+
 end

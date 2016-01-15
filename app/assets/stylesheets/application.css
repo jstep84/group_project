@@ -62,8 +62,7 @@ html {
 }
 
 #indexP {
-	/*color: #378b2e;*/
-	color: black;
+	color: #181b56; /*Fernando's suggestion for blue*/
 	padding: 10px;
 	font-size: 16px;
 	/*background: rgba(78,220,107,.3);*/
@@ -80,10 +79,6 @@ html {
 	/* width and height can be anything, as long as they're equal */
 	background-color: #FFA631;
 	margin-bottom: 20px;
-	/*box-shadow: 5px 5px rgba(0,0,0,0.3); 
-		-moz-box-shadow: 5px 5px rgba(0,0,0,0.3); 
-		-webkit-box-shadow: 5px 5px rgba(0,0,0,0.3); 
-		-o-box-shadow: 5px 5px rgba(0,0,0,0.3); */
 }
 
 .signMsg {
@@ -94,4 +89,15 @@ html {
 	padding-top: 15px;
     padding-bottom: 15px;
     border: none;
+}
+
+figure {
+	max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    figcaption{
+    	display: none;
+    }
 }
