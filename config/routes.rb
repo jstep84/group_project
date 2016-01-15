@@ -47,4 +47,8 @@ Rails.application.routes.draw do
   #Add service form route
   post 'profile' => 'profile#new'
 
+  #Populate DB
+  get 'populate_meals/' => 'populate_meals#populate'
+  get 'populate_shelters/' => 'populate_shelters#populate'
+
 end
