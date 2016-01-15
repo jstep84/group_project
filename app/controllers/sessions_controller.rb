@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if @user
       session[:user_id] = @user.id
       flash[:success] = "User logged in!"
-      redirect_to root_path
+      redirect_to :back
     else
       flash[:danger] = "Invalid email/password combination"
       redirect_to login_path
@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
   def destroy
     session[:user_id] = nil
     flash[:notice] = "User logged out"
-    redirect_to login_path
+    redirect_to :back
   end
 
   private

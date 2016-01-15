@@ -35,6 +35,10 @@ Rails.application.routes.draw do
   get '/expanded/meal/:id' => 'expanded#show_meal'
   get '/expanded/shelter/:id' => 'expanded#show_shelter'
 
+  #Comments Routes
+  post '/expanded/meal/:id' => 'comments#create'
+  post '/expanded/shelter/:id' => 'comments#create'
+
   #Root Route
   root 'main#index'
 
